@@ -13,5 +13,6 @@ namespace Entities.Concrete
         public string LastName { get; set; }
         public List<Product> HasProducts { get; set; }
         public bool StillEmployed { get; set; }
+        public Department Department { get; set; }
     }
 }
