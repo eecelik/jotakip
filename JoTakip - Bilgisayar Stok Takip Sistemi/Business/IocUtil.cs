@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Castle.MicroKernel.Registration;
+using DataAccess.Abstract;
+using DataAccess.Concrete;
+using Core.Entities;
+using Entities.Concrete;
+using System.Security.Permissions;
 
 namespace Business
 {
@@ -18,9 +23,8 @@ namespace Business
         private static IWindsorContainer BootstrapContainer()
         {
             return new WindsorContainer().Register(
-                Component.For<IProductManager>().ImplementedBy<ProductManager>(),
-                Component.For<IWarehouseManager>().ImplementedBy<Warehouse>()
-
+                Component.For<IProductDal>().ImplementedBy<ProductDal>(),
+                Component.For<IPersonalDal>().ImplementedBy<PersonalDal>()
                 );
         }
 

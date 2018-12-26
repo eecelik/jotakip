@@ -48,12 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IDepartment.cs" />
+    <Compile Include="Abstract\IDepartmentDal.cs" />
     <Compile Include="Abstract\IEntityRepository.cs" />
-    <Compile Include="Abstract\IPersonal.cs" />
-    <Compile Include="Abstract\IProduct.cs" />
-    <Compile Include="Abstract\ISalesman.cs" />
-    <Compile Include="Abstract\IUser.cs" />
+    <Compile Include="Abstract\IPersonalDal.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Abstract\ISalesmanDal.cs" />
+    <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Concrete\DepartmentDal.cs" />
     <Compile Include="Concrete\EntityRepositoryBase.cs" />
     <Compile Include="Concrete\PersonalDal.cs" />

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete
 {
-    public class DepartmentDal : EntityRepositoryBase<Department,SqlContext>,IDepartment
+    public class DepartmentDal : EntityRepositoryBase<Department,SqlContext>,IDepartmentDal
     {
     }
 }
