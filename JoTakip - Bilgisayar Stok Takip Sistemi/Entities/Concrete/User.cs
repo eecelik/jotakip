@@ -1,4 +1,5 @@
-﻿using Core.Entities;
+﻿using Core;
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -14,5 +15,6 @@ namespace Entities.Concrete
         public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public UserType UserType { get; set; }
     }
 }
