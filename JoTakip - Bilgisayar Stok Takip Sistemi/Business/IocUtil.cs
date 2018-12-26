@@ -24,7 +24,20 @@ namespace Business
         {
             return new WindsorContainer().Register(
                 Component.For<IProductDal>().ImplementedBy<ProductDal>(),
-                Component.For<IPersonalDal>().ImplementedBy<PersonalDal>()
+                Component.For<IPersonalDal>().ImplementedBy<PersonalDal>(),
+                Component.For<IDepartmentDal>().ImplementedBy<DepartmentDal>(),
+                Component.For<ISalesmanDal>().ImplementedBy<SalesmanDal>(),
+                Component.For<IUserDal>().ImplementedBy<UserDal>(),
+                Component.For<IDepartmentService>().ImplementedBy<DepartmentManager>(),
+                Component.For<IPersonalService>().ImplementedBy<PersonalManager>(),
+                Component.For<IProductService>().ImplementedBy<ProductManager>(),
+                Component.For<ISalesmanService>().ImplementedBy<SalesmanManager>(),
+                Component.For<IWarehouseService>().ImplementedBy<WarehouseManager>()
+                //Component.For<ISalesmanService>().ImplementedBy<SalesmanManager>(),
+                //Component.For<ISalesmanService>().ImplementedBy<SalesmanManager>(),
+                //Component.For<ISalesmanService>().ImplementedBy<SalesmanManager>(),
+                //Component.For<ISalesmanService>().ImplementedBy<SalesmanManager>()
+
                 );
         }
 

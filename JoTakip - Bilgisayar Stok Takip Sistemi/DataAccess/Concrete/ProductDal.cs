@@ -11,9 +11,13 @@ namespace DataAccess.Concrete
         {
             using (var context = new SqlContext())
             {
-                var addedEntity = context.Entry(entities);
-                addedEntity.State = EntityState.Added;
-                context.SaveChanges();
+                foreach (Product entity in entities)
+                {
+                    var addedEntity = context.Entry(entity);
+                    addedEntity.State = EntityState.Added;
+                    context.SaveChanges();
+                }
+
             }
         }
     }

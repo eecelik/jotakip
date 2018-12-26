@@ -55,7 +55,6 @@
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Abstract\ISalesmanService.cs" />
     <Compile Include="Abstract\IWarehouseService.cs" />
-    <Compile Include="Concrete\Company.cs" />
     <Compile Include="Concrete\DepartmentManager.cs" />
     <Compile Include="Concrete\PersonalManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />

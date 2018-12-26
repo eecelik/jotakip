@@ -18,7 +18,6 @@ namespace DataAccess.Concrete
                 var addedEntity = context.Entry(entity);
                 addedEntity.State = EntityState.Added;
                 context.SaveChanges();
-
             }
         }
 
@@ -29,13 +28,12 @@ namespace DataAccess.Concrete
                 var deleteEntity = context.Entry(entity);
                 deleteEntity.State = EntityState.Deleted;
                 context.SaveChanges();
-
             }
         }
 
         public TEntity Get(Expression<Func<TEntity, bool>> filter = null)
         {
-            using (var context=new TContext())
+            using (var context = new TContext())
             {
                 return context.Set<TEntity>().SingleOrDefault(filter);
             }
