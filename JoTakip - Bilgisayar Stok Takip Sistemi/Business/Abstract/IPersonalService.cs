@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    public interface IWarehouseManager
+    public interface IPersonalService
     {
-        List<Product> GetProducts();
-        void AddProducts(List<Product> products);
+        void Add(Personal personal);
+        void Update(Personal personal);
+        void Delete(Personal personal);
+        List<Personal> GetList();
     }
 }

@@ -10,5 +10,6 @@ namespace DataAccess.Concrete
 {
     public class PersonalDal : EntityRepositoryBase<Personal, SqlContext>, IPersonalDal
     {
+
     }
 }

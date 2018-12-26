@@ -10,7 +10,7 @@ namespace Business.Concrete
     public class Company
     {
         public User Admin { get; set; }
-        public Warehouse Warehouse { get; set; }
+        public WarehouseManager Warehouse { get; set; }
 
     }
 }

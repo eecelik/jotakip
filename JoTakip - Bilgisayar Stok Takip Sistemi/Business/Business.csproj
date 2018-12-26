@@ -50,11 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IProductManager.cs" />
-    <Compile Include="Abstract\IWarehouseManager.cs" />
+    <Compile Include="Abstract\IDepartmentService.cs" />
+    <Compile Include="Abstract\IPersonalService.cs" />
+    <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Abstract\ISalesmanService.cs" />
+    <Compile Include="Abstract\IWarehouseService.cs" />
     <Compile Include="Concrete\Company.cs" />
+    <Compile Include="Concrete\DepartmentManager.cs" />
+    <Compile Include="Concrete\PersonalManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
-    <Compile Include="Concrete\Warehouse.cs" />
+    <Compile Include="Concrete\SalesmanManager.cs" />
+    <Compile Include="Concrete\WarehouseManager.cs" />
     <Compile Include="IocUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
